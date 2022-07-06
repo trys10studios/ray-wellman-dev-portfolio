@@ -130,3 +130,5 @@ video,
         transform: translateY(-100px);
     }
 }
+
+@media screen and (max-width: 300px) {}
