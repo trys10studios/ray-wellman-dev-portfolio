@@ -3,6 +3,29 @@ html {
     background-color: lightgreen;
 }
 
+nav {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1;
+}
+
+nav div {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: xx-large;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+
 main {
     width: 100%;
 }
@@ -11,6 +34,7 @@ h1 {
     font-size: 60px;
     position: relative;
     margin: -20px;
+    z-index: -1;
 }
 
 #projects {
@@ -41,6 +65,10 @@ footer {
     font-size: 40px;
 }
 
+footer {
+    background-color: white;
+}
+
 .project-description {
     position: relative;
     width: 100%;
@@ -54,6 +82,8 @@ a {
     width: 50%;
     margin: 0 auto;
     padding: 0;
+    color: black;
+    z-index: 1;
 }
 
 .project-tile {
@@ -79,6 +109,27 @@ video,
     font-size: 40px;
 }
 
-#my-portfolio {
+#profile-link {
     width: 100%;
+}
+
+#arrow {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+    padding: 0 0 250px 0px;
+    -webkit-animation: MoveUpDown 1s linear infinite;
+    z-index: -1;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
 }
