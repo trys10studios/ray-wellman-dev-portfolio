@@ -28,6 +28,10 @@ footer a:hover {
     cursor: pointer;
 }
 
+img {
+    margin: 10px;
+}
+
 h1 {
     font-size: 60px;
     position: relative;
@@ -67,13 +71,14 @@ h1 {
 }
 
 #projects,
-footer {
+footer,
+#videos {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 footer {
@@ -101,9 +106,6 @@ video,
 
 #videos {
     border: none;
-    text-align: center;
-    font-size: 40px;
-    padding: 20px;
 }
 
 #profile-link {
