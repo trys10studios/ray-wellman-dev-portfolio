@@ -21,7 +21,8 @@ nav div {
     padding: 0;
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover {
     color: lightgreen;
     cursor: pointer;
 }
