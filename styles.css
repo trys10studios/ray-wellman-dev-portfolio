@@ -156,7 +156,7 @@ video {
 
     #arrow {
         display: block;
-        width: 50%;
+        width: 25%;
         margin: 0 auto;
         padding: 500px 0px;
         -webkit-animation: MoveUpDown 1s linear infinite;
@@ -212,7 +212,7 @@ video {
 
     #arrow {
         display: block;
-        width: 50%;
+        width: 25%;
         margin: 0 auto;
         padding: 500px 0px;
         -webkit-animation: MoveUpDown 1s linear infinite;
