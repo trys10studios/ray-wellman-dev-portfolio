@@ -142,10 +142,6 @@ video,
 
 @media screen and (max-width: 749px) {
 
-    main {
-        width: 100%;
-    }
-
     nav {
         width: 100%;
         display: grid;
@@ -175,5 +171,14 @@ video,
         width: 100%;
         font-size: x-large;
         font-family: sans-serif;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .projects-wrapper {
+        display: block;
+        width: 100%;
     }
 }
