@@ -139,22 +139,17 @@ video,
     }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (min-width: 350px) and (max-width: 749px) {
 
-    html {
-        margin: 0;
-        padding: 0;
+    main {
         width: 100%;
     }
 
     nav {
         width: 100%;
-    }
-
-    nav div {
-        width: 30%;
-        padding: 0;
-        margin: 0 5px;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #arrow {
@@ -170,17 +165,14 @@ video,
     #videos,
     #projects,
     footer {
-        width: 80%;
+        width: 100%;
+        text-align: center;
         margin: 0 auto;
     }
 
-    footer {
-        width: 100%;
-        text-align: left;
-    }
-
     .caption {
-        font-size: large;
+        width: 100%;
+        font-size: x-large;
         font-family: sans-serif;
     }
 }
