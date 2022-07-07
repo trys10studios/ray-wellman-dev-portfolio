@@ -2,14 +2,17 @@ html {
     font-family: Impact, sans-serif;
     background-color: lightgreen;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 nav {
-    width: 100%;
+    width: 90%;
     background-color: white;
-    margin: 0 auto;
     position: fixed;
     z-index: 1;
+    right: 60px;
 }
 
 nav div {
@@ -18,7 +21,7 @@ nav div {
     text-align: center;
     font-size: xx-large;
     background-color: white;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -35,6 +38,7 @@ img {
 h1 {
     font-size: 60px;
     position: relative;
+    padding-bottom: 20px;
     margin: -20px;
     z-index: -1;
 }
@@ -46,7 +50,6 @@ h1 {
     justify-items: center;
     background-color: white;
     margin: 0 auto;
-    border: solid black 10px;
 }
 
 .project-description {
@@ -74,9 +77,9 @@ h1 {
 footer,
 #videos {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     font-size: 60px;
 }
@@ -102,17 +105,12 @@ a {
     z-index: 1;
 }
 
-video,
-#videos {
-    width: 50%;
+video {
+    width: 100%;
     display: block;
     margin: 40px auto;
     border: 10px solid;
     border-collapse: separate;
-}
-
-#videos {
-    border: none;
 }
 
 #profile-link {
@@ -140,13 +138,20 @@ video,
     }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (min-width: 750px) and (max-width: 1099px) {
 
     nav {
         width: 100%;
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+    }
+
+    nav div {
+        width: 30%;
+        padding: 5px 0;
+        margin: 0 auto;
     }
 
     #arrow {
@@ -159,8 +164,6 @@ video,
     }
 
     h1,
-    #videos,
-    #projects,
     footer {
         width: 100%;
         text-align: center;
@@ -174,11 +177,70 @@ video,
     }
 
     video {
+        width: 90%;
+        display: block;
+        margin: 40px auto;
+        border: solid black 10px;
+    }
+
+    .projects-wrapper {
+        display: grid;
         width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        background-color: white;
+        border: none;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 749px) {
+
+    nav {
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+    }
+
+    nav div {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0 auto;
+    }
+
+    #arrow {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 500px 0px;
+        -webkit-animation: MoveUpDown 1s linear infinite;
+        z-index: -1;
+    }
+
+    h1,
+    footer {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .caption {
+        width: 100%;
+        font-size: x-large;
+        font-family: sans-serif;
+    }
+
+    video {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .projects-wrapper {
         display: block;
         width: 100%;
+        border: none;
     }
 }
